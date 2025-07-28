@@ -1,0 +1,290 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: 'Loves Story'++++++;
+  background: linear-gradient(to bottom, #61c0e5 , white);
+  min-height: 100vh;
+  text-align: center;
+  margin-top: 50px;
+  color: black;
+  position: relative;
+}
+
+  BG {
+    background: linear-gradient(to bottom, #61c0e5, white);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+/* Logo styling */
+.logo-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styles */
+h1 {
+  color: black;
+  font-family: 'Burgundia';
+  font-size: 2em;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+h2 {
+  color: black;
+  font-family: 'Burgundia';
+  font-size: 2em;
+  margin: 30px 0 15px 0;
+}
+
+/* Paragraph styles */
+p {
+  font-family: 'Loves Story';
+  font-size: 1em;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+}
+
+/* Link styles */
+a {
+  color: #496be2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #001466;
+  text-decoration: underline;
+}
+
+/* Image styles 
+img:not(.logo) {
+  max-width: 80%;
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+*/
+
+.imgabout {
+  max-width: 80%;
+  height: auto;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px; 
+}
+
+/* Navigation styles */
+nav {
+  background-color: #578fff;
+  padding: 15px 0;
+  text-align: center;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #addcff;
+  color: white;
+}
+
+/* Menu category styles */
+.menu-category {
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-category h2 {
+  color: #000000;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-category ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-category li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px dashed #d2b48c;
+  color: #b0a3ef;
+  font-size: 1.2em;
+  background-color: #fdf5e6;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.menu-category ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.menu-category .price-desc {
+  color: black;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+thead tr {
+  background-color: #7facf5;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #99d3ff;
+}
+
+tbody tr:hover {
+  background-color: #d7f2fd;
+  cursor: pointer;
+}
+
+/* Horizontal rule styles */
+hr {
+  border: none;
+  border-top: 2px dashed #000000;
+  width: 60%;
+  margin: 50px auto;
+}
+
+/* List styles for about page */
+ul:not(.menu-category ul) {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+li:not(.menu-category li) {
+  background-color: #70a0ff;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 1.1em;
+  font-family: 'Loves Story', sans-serif;
+}
+/* Wadah untuk semua gambar galeri (ini yang pakai Grid!) */
+.gallery-container {
+    display: grid; /* Mengaktifkan CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Kolom otomatis, min 280px */
+    gap: 25px; /* Jarak antar gambar */
+    max-width: 1000px; /* Lebar maksimum wadah galeri */
+    margin: 40px auto; /* Jarak atas/bawah dan tengah */
+    padding: 0 20px; /* Padding di kiri kanan untuk layar kecil */
+}
+
+/* Gaya untuk setiap figure (bingkai gambar) */
+figure {
+    background-color: #d9effd; /* Latar belakang putih */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan yang lebih kuat */
+    overflow: hidden; /* Penting agar gambar tidak keluar dari bingkai */
+    margin: 0; /* Hilangkan margin default figure */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek halus saat di hover */
+    text-align: center; /* Teks figcaption di tengah */
+}
+
+figure:hover {
+    transform: translateY(-5px); /* Sedikit naik saat disentuh mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Bayangan lebih besar saat disentuh */
+}
+
+/* Gaya untuk gambar di dalam figure */
+figure img {
+    max-width: 100%;
+    width: 100%; /* Gambar mengisi penuh lebar bingkai */
+    height: 220px; /* Tinggi gambar sama untuk semua */
+    object-fit: cover; /* Penting! Gambar tidak gepeng, akan dipotong jika perlu */
+    display: block; /* Hilangkan ruang kosong di bawah gambar */
+    margin: 0; /* Hilangkan margin default img */
+    border-bottom: 3px solid #0933a2; /* Garis bawah gambar */
+}
+
+/* Gaya untuk keterangan gambar (figcaption) */
+figcaption {
+    padding: 15px; /* Jarak di dalam keterangan */
+    font-size: 1.3em; /* Ukuran huruf */
+    color: #9199ff; /* Warna teks */
+    font-weight: bold; /* Teks tebal */
+    line-height: 1.4;
+}
+
+/* Media Queries untuk Layar Kecil (Bonus: Jika ada waktu bisa dijelaskan) */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 Kolom di layar tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* 1 Kolom di layar HP */
+    }
+    figure img {
+        height: 250px; /* Tinggikan sedikit di layar HP */
+    }
+}

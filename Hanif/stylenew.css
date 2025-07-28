@@ -1,0 +1,49 @@
+  vv             b   b    /* --- Gaya untuk Halaman About Us dan Link --- */
+
+/* Gaya untuk semua link (a) */
+a {
+    color: #800040; /* Warna link cokelat */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    font-weight: bold; /* Teks link jadi tebal */
+}
+
+/* Gaya saat link disentuh mouse (hover) */
+a:hover {
+    color: #d2b48c; /* Warna link berubah saat disentuh */
+}
+
+/* Gaya untuk gambar */
+img {matcha.jpg
+    max-width: 80%;
+    border-radius: 15px;
+}
+
+/* Gaya untuk daftar unordered list (ul) */
+ul {
+    list-style-type: none; /* Menghilangkan bullet point default */
+    padding: 0; /* Menghilangkan padding default */
+    margin: 20px auto; /* Jarak atas/bawah dan tengah */
+    max-width: 600px; /* Lebar maksimum daftar */
+}
+
+/* Gaya untuk setiap item daftar (li) */
+li {
+    background-color: #d2b48c; /* Warna latar belakang setiap item */
+    margin-bottom: 10px; /* Jarak antar item */
+    padding: 10px 15px; /* Jarak di dalam item */
+    border-radius: 8px; /* Sudut melengkung untuk item */
+    color: #a1785e; /* Warna teks item */
+    font-size: 1.1em;
+    text-align: left; /* Teks item rata kiri */
+}
+
+.button {
+    display: inline-block;
+    background-color: #a1785e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}

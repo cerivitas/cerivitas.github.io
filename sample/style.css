@@ -1,0 +1,650 @@
+/* Ini adalah komentar di CSS, tidak dibaca browser */
+/* Kita akan mengatur gaya untuk seluruh halaman (body) */
+body {
+  font-family: Arial, sans-serif;
+  /* Jenis huruf */
+  background-color: #f5deb3;
+  /* Warna latar belakang (beige/cokelat muda) */
+  text-align: center;
+  /* Membuat semua teks di tengah halaman */
+  margin-top: 50px;
+  /* Memberi jarak dari atas halaman */
+  color: #3e2723;
+  /* Warna teks umum (cokelat gelap) */
+}
+
+/* Mengatur gaya untuk judul utama (h1) */
+h1 {
+  color: #8b4513;
+  /* Warna teks judul (cokelat sedang) */
+  font-size: 3em;
+  /* Ukuran huruf judul, lebih besar */
+  margin-bottom: 20px;
+  /* Jarak bawah judul */
+}
+
+/* Mengatur gaya untuk paragraf (p) */
+p {
+  font-size: 1.2em;
+  /* Ukuran huruf paragraf, sedikit lebih besar */
+  line-height: 1.6;
+  /* Jarak antar baris teks */
+  max-width: 800px;
+  /* Lebar maksimum paragraf agar tidak terlalu lebar di layar besar */
+  margin: 0 auto 10px auto;
+  /* Membuat paragraf di tengah dengan jarak bawah */
+}
+
+/* --- Gaya untuk Halaman About Us dan Link --- */
+
+/* Gaya untuk semua link (a) */
+a {
+  color: #8b4513;
+  /* Warna link cokelat */
+  text-decoration: none;
+  /* Menghilangkan garis bawah pada link */
+  font-weight: bold;
+  /* Teks link jadi tebal */
+  transition: color 0.3s ease;
+  /* Efek halus saat warna berubah */
+}
+
+/* Gaya saat link disentuh mouse (hover) */
+a:hover {
+  color: #d2b48c;
+  /* Warna link berubah saat disentuh */
+}
+
+/* Gaya untuk gambar */
+img {
+  max-width: 100%;
+  /* Lebar maksimum gambar 80% dari lebar layar */
+  height: auto;
+  /* Tinggi gambar menyesuaikan otomatis */
+  margin-bottom: 30px;
+  /* Jarak dari bawah */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Efek bayangan */
+}
+
+.aboutusimg {
+  max-width: 80%;
+  border-radius: 15px;
+  /* Membuat sudut gambar jadi melengkung */
+  margin-top: 20px;
+  /* Jarak dari atas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Efek bayangan */
+	
+}
+
+/* Gaya untuk daftar unordered list (ul) */
+ul {
+  list-style-type: none;
+  /* Menghilangkan bullet point default */
+  padding: 0;
+  /* Menghilangkan padding default */
+  margin: 20px auto;
+  /* Jarak atas/bawah dan tengah */
+  max-width: 600px;
+  /* Lebar maksimum daftar */
+}
+
+/* Gaya untuk setiap item daftar (li) */
+li {
+  background-color: #d2b48c;
+  /* Warna latar belakang setiap item */
+  margin-bottom: 10px;
+  /* Jarak antar item */
+  padding: 10px 15px;
+  /* Jarak di dalam item */
+  border-radius: 8px;
+  /* Sudut melengkung untuk item */
+  color: #3e2723;
+  /* Warna teks item */
+  font-size: 1.1em;
+  text-align: left;
+  /* Teks item rata kiri */
+}
+
+/* --- Gaya untuk Navigasi (Navbar) --- */
+nav {
+  background-color: #3e2723;
+  /* Warna latar belakang navigasi (cokelat gelap) */
+  padding: 15px 0;
+  /* Jarak di dalam navigasi */
+  text-align: center;
+  /* Teks di tengah */
+  margin-bottom: 40px;
+  /* Jarak dari konten di bawahnya */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Bayangan kecil */
+}
+
+nav a {
+  color: #f5deb3;
+  /* Warna teks link navigasi (beige) */
+  text-decoration: none;
+  /* Hilangkan garis bawah */
+  font-weight: bold;
+  /* Teks tebal */
+  padding: 10px 20px;
+  /* Jarak di sekitar setiap link */
+  margin: 0 10px;
+  /* Jarak antar link */
+  border-radius: 5px;
+  /* Sudut melengkung */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /* Efek halus */
+}
+
+nav a:hover {
+  background-color: #8b4513;
+  /* Warna latar saat disentuh */
+  color: white;
+  /* Warna teks saat disentuh */
+}
+
+/* --- Gaya untuk Halaman Menu --- */
+
+/* Gaya untuk setiap kategori menu */
+.menu-category {
+  background-color: #fff;
+  /* Latar belakang putih */
+  padding: 30px;
+  /* Jarak di dalam kotak kategori */
+  margin: 20px auto;
+  /* Jarak atas/bawah dan tengah */
+  max-width: 800px;
+  /* Lebar maksimum */
+  border-radius: 10px;
+  /* Sudut melengkung */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* Efek bayangan */
+}
+
+/* Gaya untuk judul kategori (h2) */
+.menu-category h2 {
+  color: #8b4513;
+  /* Warna teks */
+  text-align: center;
+  /* Di tengah */
+  margin-bottom: 25px;
+  /* Jarak bawah */
+  font-size: 2.2em;
+  /* Ukuran huruf */
+  text-transform: uppercase;
+  /* Semua huruf besar */
+  letter-spacing: 1px;
+  /* Jarak antar huruf */
+}
+
+/* Gaya untuk daftar menu (ul di dalam menu-category) */
+.menu-category ul {
+  list-style-type: none;
+  /* Hilangkan bullet point */
+  padding: 0;
+  margin: 0;
+}
+
+/* Gaya untuk setiap item menu (li) */
+.menu-category li {
+  display: flex;
+  /* PENTING: Untuk flexbox! */
+  justify-content: space-between;
+  /* Nama di kiri, harga di kanan */
+  align-items: center;
+  /* Item rata tengah secara vertikal */
+  padding: 15px 0;
+  /* Jarak di dalam item */
+  border-bottom: 1px dashed #d2b48c;
+  /* Garis putus-putus di bawah item */
+  color: #3e2723;
+  /* Warna teks */
+  font-size: 1.2em;
+}
+
+/* Hapus border-bottom untuk item terakhir di setiap kategori */
+.menu-category ul li:last-child {
+  border-bottom: none;
+}
+
+/* Gaya untuk harga di span */
+.menu-category .price {
+  font-weight: bold;
+  /* Teks harga tebal */
+  color: #a0522d;
+  /* Warna harga sedikit berbeda */
+  font-size: 1.1em;
+}
+
+/* Gaya untuk garis pemisah (hr) */
+hr {
+  border: none;
+  /* Hilangkan border default */
+  border-top: 2px dashed #d2b48c;
+  /* Buat garis putus-putus baru */
+  width: 60%;
+  /* Lebar garis */
+  margin: 50px auto;
+  /* Jarak dan di tengah */
+}
+
+/* --- Gaya untuk Halaman Gallery --- */
+
+/* Wadah untuk semua gambar galeri (ini yang pakai Grid!) */
+.gallery-container {
+    display: grid; /* Mengaktifkan CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Kolom otomatis, min 280px */
+    gap: 25px; /* Jarak antar gambar */
+    max-width: 1000px; /* Lebar maksimum wadah galeri */
+    margin: 40px auto; /* Jarak atas/bawah dan tengah */
+    padding: 0 20px; /* Padding di kiri kanan untuk layar kecil */
+}
+
+/* Gaya untuk setiap figure (bingkai gambar) */
+figure {
+    background-color: #fff; /* Latar belakang putih */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan yang lebih kuat */
+    overflow: hidden; /* Penting agar gambar tidak keluar dari bingkai */
+    margin: 0; /* Hilangkan margin default figure */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek halus saat di hover */
+    text-align: center; /* Teks figcaption di tengah */
+}
+
+figure:hover {
+    transform: translateY(-5px); /* Sedikit naik saat disentuh mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Bayangan lebih besar saat disentuh */
+}
+
+/* Gaya untuk gambar di dalam figure */
+figure img {
+    width: 100%; /* Gambar mengisi penuh lebar bingkai */
+    height: 220px; /* Tinggi gambar sama untuk semua */
+    object-fit: cover; /* Penting! Gambar tidak gepeng, akan dipotong jika perlu */
+    display: block; /* Hilangkan ruang kosong di bawah gambar */
+    margin: 0; /* Hilangkan margin default img */
+    border-bottom: 3px solid #d2b48c; /* Garis bawah gambar */
+}
+
+/* Gaya untuk keterangan gambar (figcaption) */
+figcaption {
+    padding: 15px; /* Jarak di dalam keterangan */
+    font-size: 1em; /* Ukuran huruf */
+    color: #3e2723; /* Warna teks */
+    font-weight: bold; /* Teks tebal */
+    line-height: 1.4;
+}
+
+/* Media Queries untuk Layar Kecil (Bonus: Jika ada waktu bisa dijelaskan) */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 Kolom di layar tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* 1 Kolom di layar HP */
+    }
+    figure img {
+        height: 250px; /* Tinggikan sedikit di layar HP */
+    }
+}
+
+/* --- Gaya untuk Halaman Promo --- */
+
+/* Subtitle di halaman promo */
+.subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    color: #5d4037; /* Warna cokelat yang lebih gelap */
+    margin-bottom: 50px; /* Jarak bawah */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Wadah untuk semua kartu promo (pakai Flexbox!) */
+.promo-container {
+    display: flex; /* Mengaktifkan Flexbox */
+    flex-wrap: wrap; /* Kartu akan pindah baris jika tidak muat */
+    justify-content: center; /* Kartu diatur di tengah */
+    gap: 30px; /* Jarak antar kartu promo */
+    max-width: 1200px; /* Lebar maksimum wadah */
+    margin: 40px auto; /* Jarak atas/bawah dan tengah */
+    padding: 0 20px; /* Padding di kiri kanan */
+}
+
+/* Gaya untuk setiap kartu promo */
+.promo-card {
+    background-color: #fff; /* Latar belakang putih */
+    border-radius: 12px; /* Sudut melengkung */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    overflow: hidden; /* Pastikan gambar tidak keluar */
+    width: 320px; /* Lebar tetap untuk setiap kartu */
+    padding-bottom: 20px; /* Jarak di bawah konten */
+    text-align: center; /* Teks di tengah */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek halus saat hover */
+    border: 2px solid #d2b48c; /* Garis tepi kartu */
+}
+
+.promo-card:hover {
+    transform: translateY(-8px); /* Kartu sedikit naik saat disentuh mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar saat disentuh */
+}
+
+/* Gaya untuk gambar di dalam kartu promo */
+.promo-card img {
+    width: 100%; /* Gambar mengisi penuh lebar kartu */
+    height: 180px; /* Tinggi gambar promo */
+    object-fit: cover; /* Gambar tidak gepeng */
+    margin-bottom: 15px; /* Jarak bawah gambar */
+    border-bottom: 2px solid #8b4513; /* Garis bawah gambar */
+    margin: 0; /* Hapus semua margin, terutama margin-top yang tidak diinginkan */
+    border-radius: 0; /* Hapus lengkungan dari gambar, biarkan kartu yang mengaturnya */
+    box-shadow: none; /* Hapus bayangan dari gambar, biarkan kartu yang punya bayangan */	
+}
+
+/* Gaya untuk judul promo (h2) */
+.promo-card h2 {
+    color: #8b4513; /* Warna judul promo */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+/* Gaya untuk deskripsi promo (p) */
+.promo-card p {
+    font-size: 1.1em;
+    color: #5d4037;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    line-height: 1.5;
+}
+
+/* Gaya untuk tombol "Lihat Detail" */
+.promo-button {
+    display: inline-block; /* Agar bisa diberi padding dan margin */
+    background-color: #a0522d; /* Warna latar tombol (sienna) */
+    color: white !important; /* Warna teks tombol (putih), !important agar overriding */
+    padding: 12px 25px; /* Jarak di dalam tombol */
+    border-radius: 25px; /* Sudut tombol jadi bulat */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
+}
+
+.promo-button:hover {
+    background-color: #6a3e2a; /* Warna tombol berubah saat disentuh */
+    transform: translateY(-2px); /* Tombol sedikit naik */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Gaya untuk Halaman Contact Us --- */
+
+.contact-info, .contact-form-container {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Teks di dalam info kontak rata kiri */
+}
+
+.contact-info h2, .contact-form-container h2 {
+    color: #8b4513;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.contact-info p, .contact-info address {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #5d4037;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #a0522d; /* Warna link telepon/email */
+    font-weight: normal; /* Kembali ke normal, tidak tebal seperti nav */
+}
+
+/* Gaya untuk Formulir Kontak */
+.form-group {
+    margin-bottom: 20px; /* Jarak antar setiap grup isian */
+}
+
+.form-group label {
+    display: block; /* Label di atas input */
+    margin-bottom: 8px; /* Jarak antara label dan input */
+    font-weight: bold;
+    color: #3e2723;
+    font-size: 1.1em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 20px); /* Lebar 100% dikurangi padding */
+    padding: 12px;
+    border: 1px solid #d2b48c; /* Border warna cokelat muda */
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+    color: #3e2723;
+}
+
+.form-group textarea {
+    resize: vertical; /* Hanya bisa diubah tingginya secara vertikal */
+}
+
+.form-button {
+    display: block; /* Tombol jadi satu baris penuh */
+    width: 100%; /* Lebar tombol 100% */
+    padding: 15px;
+    background-color: #8b4513; /* Warna latar tombol */
+    color: white !important; /* Teks putih, penting */
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer; /* Kursor berubah jadi tangan saat di atas tombol */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-button:hover {
+    background-color: #6a3e2a; /* Warna berubah saat disentuh */
+    transform: translateY(-2px); /* Sedikit naik */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Gaya untuk FOOTER (Kaki Halaman) --- */
+footer {
+    background-color: #3e2723; /* Warna latar belakang footer (cokelat gelap) */
+    color: #f5deb3; /* Warna teks footer (beige) */
+    padding: 30px 20px; /* Jarak di dalam footer */
+    text-align: center; /* Teks di tengah */
+    margin-top: 50px; /* Jarak dari konten di atasnya */
+    font-size: 0.9em;
+}
+
+.footer-content {
+    max-width: 960px; /* Lebar maksimum konten footer */
+    margin: 0 auto; /* Di tengah */
+    display: flex; /* Untuk menata copyright dan link */
+    flex-direction: column; /* Konten di bawahnya di layar kecil */
+    align-items: center; /* Tengah secara horizontal */
+    gap: 15px; /* Jarak antar item */
+}
+
+.footer-content p {
+    margin: 0; /* Hilangkan margin default paragraf */
+}
+
+.footer-links a {
+    color: #d2b48c; /* Warna link di footer */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    font-weight: normal; /* Tidak tebal */
+}
+
+.footer-links a:hover {
+    color: white; /* Warna berubah saat disentuh */
+}
+
+/* Media Query untuk footer di layar besar */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* Kembali ke baris di layar besar */
+        justify-content: space-between; /* Copyright kiri, link kanan */
+    }
+}
+
+/* --- Gaya untuk Halaman Menu --- */
+
+/* Gaya untuk setiap kategori menu */
+.menu-category {
+  background-color: #fff;
+  /* Latar belakang putih */
+  padding: 30px;
+  /* Jarak di dalam kotak kategori */
+  margin: 20px auto;
+  /* Jarak atas/bawah dan tengah */
+  max-width: 800px;
+  /* Lebar maksimum */
+  border-radius: 10px;
+  /* Sudut melengkung */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  /* Efek bayangan */
+}
+
+/* Gaya untuk judul kategori (h2) */
+.menu-category h2 {
+  color: #8b4513;
+  /* Warna teks */
+  text-align: center;
+  /* Di tengah */
+  margin-top: 0;
+  /* Hapus margin atas agar rapi */
+  margin-bottom: 25px;
+  /* Jarak bawah */
+  font-size: 2.2em;
+  /* Ukuran huruf */
+  text-transform: uppercase;
+  /* Semua huruf besar */
+  letter-spacing: 1px;
+  /* Jarak antar huruf */
+}
+
+/* Gaya untuk daftar menu (ul di dalam menu-category) */
+.menu-category ul {
+  list-style-type: none;
+  /* Hilangkan bullet point */
+  padding: 0;
+  margin: 0;
+}
+
+/* Gaya untuk setiap item daftar kategori (li) */
+.menu-category li {
+  display: flex;
+  /* PENTING: Untuk flexbox! */
+  justify-content: space-between;
+  /* Nama di kiri, harga di kanan */
+  align-items: center;
+  /* Item rata tengah secara vertikal */
+  padding: 15px 20px;
+  /* DITAMBAHKAN PADDING KIRI-KANAN 20px */
+  border-bottom: 1px dashed #d2b48c;
+  /* Garis putus-putus di bawah item */
+  color: #3e2723;
+  /* Warna teks */
+  font-size: 1.2em;
+  background-color: #fdf5e6;
+  /* Tambah background agar lebih menonjol */
+  border-radius: 8px;
+  /* Sudut melengkung */
+  margin-bottom: 10px;
+  /* Jarak antar item */
+}
+
+/* Hapus border-bottom untuk item terakhir di setiap kategori */
+.menu-category ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+/* Gaya untuk deskripsi di span */
+.menu-category .price-desc {
+  color: black;
+  font-style: italic;
+  font-weight: normal;
+}
+
+table {
+  width: 100%;
+  /* Lebar tabel 100% dari kontainernya */
+  border-collapse: collapse;
+  /* Menghilangkan jarak antar border sel */
+  margin: 20px 0;
+  /* Jarak atas-bawah */
+}
+
+/* Style untuk sel header (th) dan sel data (td) */
+th,
+td {
+  padding: 12px 15px;
+  /* Padding di dalam sel */
+  text-align: left;
+  /* Teks rata kiri agar rapi */
+  border-bottom: 1px solid #ddd;
+  /* Garis pemisah antar baris */
+}
+
+/* Style khusus untuk kolom harga, rata kanan */
+td:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+/* Style untuk Header Tabel (thead) */
+thead tr {
+  background-color: #8b4513;
+  /* Warna latar header cokelat */
+  color: #fff;
+  /* Warna teks putih */
+  text-transform: uppercase;
+  /* Huruf besar semua */
+}
+
+/* Style untuk Baris Ganjil-Genap (tbody) - Efek Zebra */
+tbody tr:nth-child(even) {
+  background-color: #f9f2e7;
+  /* Warna latar untuk baris genap (sedikit lebih gelap dari putih) */
+}
+
+/* Efek hover pada baris tabel */
+tbody tr:hover {
+  background-color: #d2b48c;
+  /* Warna latar saat kursor di atas baris */
+  cursor: pointer;
+}
+
+
+/* Gaya untuk garis pemisah (hr) */
+hr {
+  border: none;
+  /* Hilangkan border default */
+  border-top: 2px dashed #d2b48c;
+  /* Buat garis putus-putus baru */
+  width: 60%;
+  /* Lebar garis */
+  margin: 50px auto;
+  /* Jarak dan di tengah */
+}

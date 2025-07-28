@@ -1,0 +1,490 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: "Cookie", cursive;
+  font-style: normal;
+  background: linear-gradient(to bottom, skyblue, white);
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+  text-align: center;
+  color: black;
+  margin: 0; 
+}
+<body>
+    {
+    font-family: 'Cookie', sans-serif; /*apply font to all text*/
+    }
+</body>
+
+header {
+  background-color: skyblue; 
+}
+
+h1 {
+  color: black; 
+  font-family: 'Cookie', serif;
+  font-size: 2.5em; 
+  margin-bottom: 20px;
+  margin-top: 40px; 
+}
+
+p {
+  font-family: 'Cookie', sans-serif; 
+  font-size: 1.5em; 
+  line-height: 1.6; 
+  max-width: 800px; 
+  margin: 0 auto 10px auto; 
+}
+
+.logo-container {
+  text-align: left;
+  padding: 15px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2); 
+}
+
+nav {
+  background-color: #578fff;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #addcff;
+  color: white;
+}
+
+
+h2 {
+  color: black;
+  font-family: 'Cookie';
+  font-size: 2.5em;
+  margin: 30px 0 15px 0;
+}
+
+a {
+  color: #496be2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #001466;
+  text-decoration: underline;
+}
+
+.imgabout {
+  max-width: 80%;
+  height: auto;
+  text-align: center;
+  border-radius: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px; 
+}
+
+/* Menu category styles */
+.menu-category {
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-category h2 {
+  color: #000000;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 2.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-category ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-category li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px dashed #d2b48c;
+  color: #b0a3ef;
+  font-size: 1.2em;
+  background-color: #fdf5e6;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.menu-category ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.menu-category .price-desc {
+  color: black;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+  text-align: right;
+  font-weight: bold;
+}
+
+thead tr {
+  background-color: #7facf5;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #99d3ff;
+}
+
+tbody tr:hover {
+  background-color: #d7f2fd;
+  cursor: pointer;
+}
+
+/* Horizontal rule styles */
+hr {
+  border: none;
+  border-top: 2px dashed #000000;
+  width: 60%;
+  margin: 50px auto;
+}
+
+/* List styles for about page */
+ul:not(.menu-category ul) {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: left;
+}
+
+li:not(.menu-category li) {
+  background-color: #70a0ff;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 1.5em;
+  font-family: 'Cookie', sans-serif;
+}
+
+/* Wadah untuk semua gambar galeri (ini yang pakai Grid!) */
+.gallery-container {
+    display: grid; /* Mengaktifkan CSS Grid */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Kolom otomatis, min 280px */
+    gap: 25px; /* Jarak antar gambar */
+    max-width: 1000px; /* Lebar maksimum wadah galeri */
+    margin: 40px auto; /* Jarak atas/bawah dan tengah */
+    padding: 0 20px; /* Padding di kiri kanan untuk layar kecil */
+}
+
+/* Gaya untuk setiap figure (bingkai gambar) */
+figure {
+    background-color: #d9effd; /* Latar belakang putih */
+    border-radius: 10px; /* Sudut melengkung */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Efek bayangan yang lebih kuat */
+    overflow: hidden; /* Penting agar gambar tidak keluar dari bingkai */
+    margin: 0; /* Hilangkan margin default figure */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek halus saat di hover */
+    text-align: center; /* Teks figcaption di tengah */
+}
+
+figure:hover {
+    transform: translateY(-5px); /* Sedikit naik saat disentuh mouse */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25); /* Bayangan lebih besar saat disentuh */
+}
+
+/* Gaya untuk gambar di dalam figure */
+figure img {
+    max-width: 100%;
+    width: 100%; /* Gambar mengisi penuh lebar bingkai */
+    height: 220px; /* Tinggi gambar sama untuk semua */
+    object-fit: cover; /* Penting! Gambar tidak gepeng, akan dipotong jika perlu */
+    display: block; /* Hilangkan ruang kosong di bawah gambar */
+    margin: 0; /* Hilangkan margin default img */
+    border-bottom: 3px solid #0933a2; /* Garis bawah gambar */
+}
+
+/* Gaya untuk keterangan gambar (figcaption) */
+figcaption {
+    padding: 15px; /* Jarak di dalam keterangan */
+    font-size: 1.3em; /* Ukuran huruf */
+    color: #9199ff; /* Warna teks */
+    font-weight: bold; /* Teks tebal */
+    line-height: 1.4;
+}
+
+/* Media Queries untuk Layar Kecil (Bonus: Jika ada waktu bisa dijelaskan) */
+@media (max-width: 768px) {
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 Kolom di layar tablet */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-container {
+        grid-template-columns: 1fr; /* 1 Kolom di layar HP */
+    }
+    figure img {
+        height: 250px; /* Tinggikan sedikit di layar HP */
+    }
+}
+/* --- Gaya untuk Halaman Promo --- */
+
+/* Subtitle di halaman promo */
+.subtitle {
+  font-family: 'Cookie', sans-serif; 
+    text-align: center;
+    font-size: 1.2em;
+    color: #4e79c0; /* Warna cokelat yang lebih gelap */
+    margin-bottom: 50px; /* Jarak bawah */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Wadah untuk semua kartu promo (pakai Flexbox!) */
+.promo-container {
+    display: flex; /* Mengaktifkan Flexbox */
+    flex-wrap: wrap; /* Kartu akan pindah baris jika tidak muat */
+    justify-content: center; /* Kartu diatur di tengah */
+    gap: 30px; /* Jarak antar kartu promo */
+    max-width: 1200px; /* Lebar maksimum wadah */
+    margin: 40px auto; /* Jarak atas/bawah dan tengah */
+    padding: 0 20px; /* Padding di kiri kanan */
+}
+
+/* Gaya untuk setiap kartu promo */
+.promo-card {
+    background-color: #fff; /* Latar belakang putih */
+    border-radius: 12px; /* Sudut melengkung */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    overflow: hidden; /* Pastikan gambar tidak keluar */
+    width: 320px; /* Lebar tetap untuk setiap kartu */
+    padding-bottom: 20px; /* Jarak di bawah konten */
+    text-align: center; /* Teks di tengah */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek halus saat hover */
+    border: 2px solid #0164ad; /* Garis tepi kartu */
+}
+
+.promo-card:hover {
+    transform: translateY(-8px); /* Kartu sedikit naik saat disentuh mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar saat disentuh */
+}
+
+/* Gaya untuk gambar di dalam kartu promo */
+.promo-card img {
+    width: 100%; /* Gambar mengisi penuh lebar kartu */
+    height: 180px; /* Tinggi gambar promo */
+    object-fit: cover; /* Gambar tidak gepeng */
+    margin-bottom: 15px; /* Jarak bawah gambar */
+    border-bottom: 2px solid #02408a; /* Garis bawah gambar */
+}
+
+/* Gaya untuk judul promo (h2) */
+.promo-card h2 {
+    color: #02409b; /* Warna judul promo */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+/* Gaya untuk deskripsi promo (p) */
+.promo-card p {
+  font-family: 'Cookie', sans-serif; 
+    font-size: 1.1em;
+    color: #057dbe;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    line-height: 1.5;
+}
+
+/* Gaya untuk tombol "Lihat Detail" */
+.promo-button {
+    display: inline-block; /* Agar bisa diberi padding dan margin */
+    background-color: #02409b; /* Warna latar tombol (sienna) */
+    color: white !important; /* Warna teks tombol (putih), !important agar overriding */
+    padding: 12px 25px; /* Jarak di dalam tombol */
+    border-radius: 25px; /* Sudut tombol jadi bulat */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
+}
+
+.promo-button:hover {
+    background-color: #8080ff;  /* Warna tombol berubah saat disentuh */
+    transform: translateY(-2px); /* Tombol sedikit naik */
+    box-shadow: 0 6px 12px rgb(232, 254, 255, 0.3);
+}
+/* --- Gaya untuk Halaman Contact Us --- */
+
+.contact-info, .contact-form-container {
+  background: linear-gradient(to bottom, #e6fbff, white);
+  background-repeat: no-repeat;
+  min-height: 100vh; 
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Teks di dalam info kontak rata kiri */
+}
+
+.contact-info h2, .contact-form-container h2 {
+    color: #577dbd;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.contact-info p, .contact-info address {
+    font-size: 1.3em;
+    line-height: 1.6;
+    color: #22599d;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #5383a6; /* Warna link telepon/email */
+    font-weight: normal; /* Kembali ke normal, tidak tebal seperti nav */
+}
+
+/* Gaya untuk Formulir Kontak */
+.form-group {
+    margin-bottom: 20px; /* Jarak antar setiap grup isian */
+}
+
+.form-group label {
+    display: block; /* Label di atas input */
+    margin-bottom: 8px; /* Jarak antara label dan input */
+    font-weight: bold;
+    color: #346b98;
+    font-size: 1.5em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 20px); /* Lebar 100% dikurangi padding */
+    padding: 12px;
+    border: 1px solid #486591; /* Border warna cokelat muda */
+    border-radius: 8px;
+    font-size: 1.3em;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+    color: #486591;
+}
+
+.form-group textarea {
+    resize: vertical; /* Hanya bisa diubah tingginya secara vertikal */
+}
+
+.form-button {
+    display: block; /* Tombol jadi satu baris penuh */
+    width: 100%; /* Lebar tombol 100% */
+    padding: 15px;
+    background-color: #486591; /* Warna latar tombol */
+    color: white !important; /* Teks putih, penting */
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer; /* Kursor berubah jadi tangan saat di atas tombol */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-button:hover {
+    background-color: #486591; /* Warna berubah saat disentuh */
+    transform: translateY(-2px); /* Sedikit naik */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Gaya untuk FOOTER (Kaki Halaman) --- */
+footer {
+    background-color: #486591; /* Warna latar belakang footer (cokelat gelap) */
+    color: #ffffff; /* Warna teks footer (beige) */
+    padding: 30px 20px; /* Jarak di dalam footer */
+    text-align: center; /* Teks di tengah */
+    margin-top: 50px; /* Jarak dari konten di atasnya */
+    font-size: 1.3em;
+}
+
+.footer-content {
+    max-width: 960px; /* Lebar maksimum konten footer */
+    margin: 0 auto; /* Di tengah */
+    display: flex; /* Untuk menata copyright dan link */
+    flex-direction: column; /* Konten di bawahnya di layar kecil */
+    align-items: center; /* Tengah secara horizontal */
+    gap: 15px; /* Jarak antar item */
+}
+
+.footer-content p {
+    margin: 0; /* Hilangkan margin default paragraf */
+}
+
+.footer-links a {
+    color: #9bfaff; /* Warna link di footer */
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+    font-weight: normal; /* Tidak tebal */
+}
+
+.footer-links a:hover {
+    color: white; /* Warna berubah saat disentuh */
+}
+
+/* Media Query untuk footer di layar besar */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* Kembali ke baris di layar besar */
+        justify-content: space-between; /* Copyright kiri, link kanan */
+    }
+}
