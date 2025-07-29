@@ -1,0 +1,425 @@
+body {
+  font-family: Arial, sans-serif; /* Jenis huruf */
+  background-color: #ffe5f2; /* Warna latar belakang (beige/cokelat muda) */
+  text-align: center; /* Membuat semua teks di tengah halaman */
+  margin-top: 50px; /* Memberi jarak dari atas halaman */
+  color: #fb79b8; /* Warna teks umum (cokelat gelap) */
+}
+
+/* Mengatur gaya untuk judul utama (h1) */
+h1 {
+  color: #fb79b8; /* Warna teks judul (cokelat sedang) */
+  font-size: 3em; /* Ukuran huruf judul, lebih besar */
+  margin-bottom: 20px; /* Jarak bawah judul */
+}
+
+/* --- Gaya untuk Halaman About Us dan Link --- */
+
+/* Gaya untuk semua link (a) */
+a {
+    color: #ffe5f2; /* Warna link cokelat */
+    text-decoration: none; /* Menghilangkan garis bawah pada link */
+    font-weight: bold; /* Teks link jadi tebal */
+} 
+
+/* Gaya saat link disentuh mouse (hover) */
+a:hover {
+    color: #fb60ab; /* Warna link berubah saat disentuh */
+}
+
+/* Gaya untuk gambar */
+img {
+    max-width: 80%; /* Lebar maksimum gambar 80% dari lebar layar */
+    height: auto; /* Tinggi gambar menyesuaikan otomatis */
+    border-radius: 15px; /* Membuat sudut gambar jadi melengkung */
+    margin-top: 20px; /* Jarak dari atas */
+    margin-bottom: 30px; /* Jarak dari bawah */
+}
+
+/* Gaya untuk daftar unordered list (ul) */
+ul {
+    list-style-type: none; /* Menghilangkan bullet point default */
+    padding: 0; /* Menghilangkan padding default */
+    margin: 20px auto; /* Jarak atas/bawah dan tengah */
+    max-width: 600px; /* Lebar maksimum daftar */
+}
+
+/* Gaya untuk setiap item daftar (li) */
+li {
+    background-color: #ff85c0; /* Warna latar belakang setiap item */
+    margin-bottom: 10px; /* Jarak antar item */
+    padding: 10px 15px; /* Jarak di dalam item */
+    border-radius: 8px; /* Sudut melengkung untuk item */
+    color: #ffe5f2; /* Warna teks item */
+    font-size: 1.1em;
+    text-align: left; /* Teks item rata kiri */
+}
+
+nav {
+
+  background-color: #ff66b0;
+
+  padding: 15px 0;
+
+  text-align: center;
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+nav a {
+
+  color: #ffe5f2;
+
+  text-decoration: none;
+
+  font-weight: bold;
+
+  font-size: 1.5em;
+
+  padding: 10px 20px;
+
+  margin: 0 10px;
+
+  border-radius: 5px;
+
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+}
+
+
+
+nav a:hover {
+
+  background-color: #f5e5f2;
+
+  color: white;
+
+}
+
+
+
+
+/* --- Gaya untuk Halaman Promo --- */
+
+/* Subtitle di halaman promo */
+.subtitle {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ff5cab; /* Warna cokelat yang lebih gelap */
+    margin-bottom: 50px; /* Jarak bawah */
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Wadah untuk semua kartu promo (pakai Flexbox!) */
+.promo-container {
+    display: flex; /* Mengaktifkan Flexbox */
+    flex-wrap: wrap; /* Kartu akan pindah baris jika tidak muat */
+    justify-content: center; /* Kartu diatur di tengah */
+    gap: 30px; /* Jarak antar kartu promo */
+    max-width: 1200px; /* Lebar maksimum wadah */
+    margin: 40px auto; /* Jarak atas/bawah dan tengah */
+    padding: 0 20px; /* Padding di kiri kanan */
+}
+
+/* Gaya untuk setiap kartu promo */
+.promo-card {
+    background-color: #fff; /* Latar belakang putih */
+    border-radius: 12px; /* Sudut melengkung */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    overflow: hidden; /* Pastikan gambar tidak keluar */
+    width: 320px; /* Lebar tetap untuk setiap kartu */
+    padding-bottom: 20px; /* Jarak di bawah konten */
+    text-align: center; /* Teks di tengah */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek halus saat hover */
+    border: 2px solid #ff85c0; /* Garis tepi kartu */
+}
+
+.promo-card:hover {
+    transform: translateY(-8px); /* Kartu sedikit naik saat disentuh mouse */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar saat disentuh */
+}
+
+/* Gaya untuk gambar di dalam kartu promo */
+.promo-card img {
+    width: 100%; /* Gambar mengisi penuh lebar kartu */
+    height: 180px; /* Tinggi gambar promo */
+    object-fit: cover; /* Gambar tidak gepeng */
+    margin-bottom: 15px; /* Jarak bawah gambar */
+    border-bottom: 2px solid #ff85c0; /* Garis bawah gambar */
+}
+
+/* Gaya untuk judul promo (h2) */
+.promo-card h2 {
+    color: #ff66b0; /* Warna judul promo */
+    font-size: 1.8em;
+    margin-bottom: 10px;
+    padding: 0 15px;
+}
+
+/* Gaya untuk deskripsi promo (p) */
+.promo-card p {
+    font-size: 1.1em;
+    color: #ff7abd;
+    margin-bottom: 25px;
+    padding: 0 15px;
+    line-height: 1.5;
+}
+
+/* Gaya untuk tombol "Lihat Detail" */
+.promo-button {
+    display: inline-block; /* Agar bisa diberi padding dan margin */
+    background-color: #ff85c0; /* Warna latar tombol (sienna) */
+    color: white !important; /* Warna teks tombol (putih), !important agar overriding */
+    padding: 12px 25px; /* Jarak di dalam tombol */
+    border-radius: 25px; /* Sudut tombol jadi bulat */
+    text-decoration: none; /* Hilangkan garis bawah */
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efek halus */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
+}
+
+.promo-button:hover {
+    background-color: #ff4da0; /* Warna tombol berubah saat disentuh */
+    transform: translateY(-2px); /* Tombol sedikit naik */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* --- Gaya untuk Halaman Contact Us --- */
+
+.contact-info, .contact-form-container {
+    background-color: #fff;
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgb(254, 169, 206, 0.1);
+    text-align: left; /* Teks di dalam info kontak rata kiri */
+}
+
+.contact-info h2, .contact-form-container h2 {
+    color: #ff66b0;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+.contact-info p, .contact-info address {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #ff70b5;
+    margin-bottom: 15px;
+}
+
+.contact-info a {
+    color: #ff52a5; /* Warna link telepon/email */
+    font-weight: normal; /* Kembali ke normal, tidak tebal seperti nav */
+}
+
+/* Gaya untuk Formulir Kontak */
+.form-group {
+    margin-bottom: 20px; /* Jarak antar setiap grup isian */
+}
+
+.form-group label {
+    display: block; /* Label di atas input */
+    margin-bottom: 8px; /* Jarak antara label dan input */
+    font-weight: bold;
+    color: #ff66b0;
+    font-size: 1.1em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: calc(100% - 20px); /* Lebar 100% dikurangi padding */
+    padding: 12px;
+    border: 1px solid #ff85c0; /* Border warna cokelat muda */
+    border-radius: 8px;
+    font-size: 1em;
+    box-sizing: border-box; /* Agar padding tidak menambah lebar */
+    color: #ff85c0;
+}
+
+.form-group textarea {
+    resize: vertical; /* Hanya bisa diubah tingginya secara vertikal */
+}
+
+.form-button {
+    display: block; /* Tombol jadi satu baris penuh */
+    width: 100%; /* Lebar tombol 100% */
+    padding: 15px;
+    background-color: #f561a8; /* Warna latar tombol */
+    color: white !important; /* Teks putih, penting */
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer; /* Kursor berubah jadi tangan saat di atas tombol */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-button:hover {
+    background-color: #f953a3; /* Warna berubah saat disentuh */
+    transform: translateY(-2px); /* Sedikit naik */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* --- Gaya untuk FOOTER (Kaki Halaman) --- */
+footer {
+    background-color: #fdafd5; /* Warna latar belakang footer (cokelat gelap) */
+    color: #f958a6; /* Warna teks footer (beige) */
+    padding: 30px 20px; /* Jarak di dalam footer */
+    text-align: center; /* Teks di tengah */
+    margin-top: 50px; /* Jarak dari konten di atasnya */
+    font-size: 0.9em;
+}
+
+.footer-content {
+    max-width: 960px; /* Lebar maksimum konten footer */
+    margin: 0 auto; /* Di tengah */
+    display: flex; /* Untuk menata copyright dan link */
+    flex-direction: column; /* Konten di bawahnya di layar kecil */
+    align-items: center; /* Tengah secara horizontal */
+    gap: 15px; /* Jarak antar item */
+}
+
+.footer-content p {
+    margin: 0; /* Hilangkan margin default paragraf */
+}
+
+/* --- Gaya untuk Halaman Contact Us --- */
+
+  .contact-info, .contact-form-container {
+      background-color: #fff;
+      padding: 30px;
+      margin: 30px auto;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgb(255, 148, 200, 0.1);
+      text-align: left; /* Teks di dalam info kontak rata kiri */
+  }
+
+  .contact-info h2, .contact-form-container h2 {
+      color: #ff85c0;
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 2em;
+  }
+
+  .contact-info p, .contact-info address {
+      font-size: 1.1em;
+      line-height: 1.6;
+      color: #ff6bb3;
+      margin-bottom: 15px;
+  }
+
+  .contact-info a {
+      color: #ff85c0; /* Warna link telepon/email */
+      font-weight: normal; /* Kembali ke normal, tidak tebal seperti nav */
+  }
+
+  /* Gaya untuk Formulir Kontak */
+  .form-group {
+      margin-bottom: 20px; /* Jarak antar setiap grup isian */
+  }
+
+  .form-group label {
+      display: block; /* Label di atas input */
+      margin-bottom: 8px; /* Jarak antara label dan input */
+      font-weight: bold;
+      color: #ff85c0;
+      font-size: 1.1em;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group textarea {
+      width: calc(100% - 20px); /* Lebar 100% dikurangi padding */
+      padding: 12px;
+      border: 1px solid #ffa3d0; /* Border warna cokelat muda */
+      border-radius: 8px;
+      font-size: 1em;
+      box-sizing: border-box; /* Agar padding tidak menambah lebar */
+      color: #ff85c0;
+  }
+
+  .form-group textarea {
+      resize: vertical; /* Hanya bisa diubah tingginya secara vertikal */
+  }
+
+  .form-button {
+      display: block; /* Tombol jadi satu baris penuh */
+      width: 100%; /* Lebar tombol 100% */
+      padding: 15px;
+      background-color: #ff5cab; /* Warna latar tombol */
+      color: white !important; /* Teks putih, penting */
+      border: none;
+      border-radius: 25px;
+      font-size: 1.2em;
+      font-weight: bold;
+      cursor: pointer; /* Kursor berubah jadi tangan saat di atas tombol */
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 8px rgb(255, 71, 169, 0.2);
+  }
+
+  .form-button:hover {
+      background-color: #ff85c0; /* Warna berubah saat disentuh */
+      transform: translateY(-2px); /* Sedikit naik */
+      box-shadow: 0 6px 12px rgb(255, 148, 210, 0.3);
+  }
+
+  /* --- Gaya untuk FOOTER (Kaki Halaman) --- */
+  footer {
+      background-color: #ff85c0; /* Warna latar belakang footer (cokelat gelap) */
+      color: #ffffff; /* Warna teks footer (beige) */
+      padding: 30px 20px; /* Jarak di dalam footer */
+      text-align: center; /* Teks di tengah */
+      margin-top: 50px; /* Jarak dari konten di atasnya */
+      font-size: 0.9em;
+  }
+
+  .footer-content {
+      max-width: 960px; /* Lebar maksimum konten footer */
+      margin: 0 auto; /* Di tengah */
+      display: flex; /* Untuk menata copyright dan link */
+      flex-direction: column; /* Konten di bawahnya di layar kecil */
+      align-items: center; /* Tengah secara horizontal */
+      gap: 15px; /* Jarak antar item */
+  }
+
+  .footer-content p {
+      margin: 0; /* Hilangkan margin default paragraf */
+  }
+
+  .footer-links a {
+      color: #ffffff; /* Warna link di footer */
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+      font-weight: normal; /* Tidak tebal */
+  }
+
+  .footer-links a:hover {
+      color: white; /* Warna berubah saat disentuh */
+  }
+
+  /* Media Query untuk footer di layar besar */
+  @media (min-width: 768px) {
+      .footer-content {
+          flex-direction: row; /* Kembali ke baris di layar besar */
+          justify-content: space-between; /* Copyright kiri, link kanan */
+      }
+  }
+
+/* Media Query untuk footer di layar besar */
+@media (min-width: 768px) {
+    .footer-content {
+        flex-direction: row; /* Kembali ke baris di layar besar */
+        justify-content: space-between; /* Copyright kiri, link kanan */
+    }
+}
