@@ -1,0 +1,59 @@
+body {
+  color: black;
+  background-color: white;
+  background-image: url("https://cdn.gomix.com/c4bf6ff5-73ba-4b1f-a316-0141bdaa19f4%2Fhilary-kauder-grate-2.jpg");
+  background-repeat: repeat-y;
+}
+.navmisi {
+  background: rgba(255, 255, 204, 0.2);
+}
+.tabu {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background: rgba(0, 0, 0, 0.5);
+}
+.tabs {
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-top-radius: 10px;
+}
+.selectednav {
+  font-family: 'Bangers', cursive;
+  color: black;
+  text-align: center;
+  font-size: 150%;
+}
+.unselectednav {
+  font-family: 'Bangers', cursive;
+  color: white;
+  text-align: center;
+  font-size: 150%;
+}
+.utama {
+  
+  background: rgba(255, 255, 204, 0.5);
+}
+.topjudul {
+  font-family: 'Bangers', cursive;
+  color: white;
+}
+.judul {
+  font-family: 'Bangers', cursive;
+  font-size: 120%;
+}
+.subjudul {
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 120%;
+}
+.logo {
+  background-image: url('https://cdn.gomix.com/22096f5e-75d1-46e8-b49a-ceba55c5911a%2Focean-adventure.png');
+  background-size: 200px;
+  background-repeat: no-repeat;
+}
+
+/**
+a {
+  color: orange;
+  
+}
+**/
